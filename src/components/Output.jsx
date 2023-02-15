@@ -1,9 +1,13 @@
 import React from "react";
+import JSONPretty from "react-json-prettify";
 
-function Output() {
+function Output({ result }) {
+  //   console.log(result, "setResult");
   return (
     <div className="output_container">
-      <div className="output_screen">Output</div>
+      <div className="output_screen">
+        <JSONPretty json={result} />
+      </div>
     </div>
   );
 }
